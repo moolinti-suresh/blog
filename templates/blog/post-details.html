@@ -11,6 +11,7 @@
       <p class="article-content">{{ post.content }}</p>
     </div>
   </article>
+  <a class="btn btn-outline-info" href="{% url 'post-update' post.id %}">Update</a>
   <a class="btn btn-outline-danger" href="{% url 'delete-post' post.id %}">Delete</a>
   
 {% endblock content %}
