@@ -1,7 +1,7 @@
 {% extends "blog/base.html" %}
 {% block content %}
-   <h2 class="alert alert-success mr-2" >Total Posts of {{ username|capfirst }} is ({{posts}})</h2 clas>
-    {% for post in page_obj.object_list %}
+   <h2 class="alert alert-success mr-2" >Total Posts of {{ username|capfirst }} is ({{posts_count}})</h2 clas>
+    {% for post in posts %}
         <article class="media content-section">
           <img class="rounded-circle article-img" src="{{ post.author.profile.image.url }}">
           <div class="media-body">
